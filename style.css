@@ -90,10 +90,10 @@ a{
 
 @keyframes twitch {
     from {
-        transform: rotate(0deg) translateX(-380px);
+        transform: rotate(250deg) translateX(-380px);
     }
     to {
-        transform: rotate(360deg) translateX(-380px);
+        transform: rotate(470deg) translateX(-380px);
     }
     
 }
@@ -225,7 +225,8 @@ a{
     height: auto;
     position:absolute;
     display: block;
-    opacity: 60%
+    opacity: 60%;
+     display: block;
 }
 
 @keyframes img {
@@ -237,23 +238,113 @@ a{
     }
 }
 
+    
 
 @media only screen and (max-width: 600px) {
     html {
         zoom: 0.8;
+        overflow: hidden;
     }
     
     body {
         background-color: cadetblue;
-        overflow-x: scroll;
-        padding-right: 100px;
+        overflow: hidden;
     }
     
+    .sunImg
+    {
+        display: none;
+    }
+    
+    .sun{
+        border: 12px solid white;
+        border-style: double;
+    }
     .all {
         position: absolute;
-        transform: translate(420px);
+        transform: translate(465px);
         top: 50%;
     }
+    
+    @keyframes img {
+        from {
+            transform: rotate(-250deg);
+        }
+        to {
+            transform: rotate(-470deg);
+        }
+    }
+    
+    @keyframes botsText {
+        from {
+            transform: rotate(-250deg) translateY(-30px);
+        }
+        to {
+            transform: rotate(-470deg) translateY(-30px);
+        }
+        
+    }
+
+    @keyframes youtubeText {
+        from {
+            transform: rotate(-250deg) translateY(-40px);
+        }
+        to {
+            transform: rotate(-470deg) translateY(-40px);
+        }
+        
+    }
+    
+    @keyframes twitchText {
+        from {
+            transform: rotate(-250deg) translateY(-60px);
+        }
+        to {
+            transform: rotate(-470deg) translateY(-60px);
+        }
+    }
+    
+    @keyframes bots {
+        from {
+            transform: rotate(250deg) translateX(-150px);
+        }
+        to {
+            transform: rotate(470deg) translateX(-150px);
+        }
+        
+    }
+    
+    @keyframes youtube {
+        from {
+            transform: rotate(250deg) translateX(-250px);
+        }
+        to {
+            transform: rotate(470deg) translateX(-250px);
+        }
+        
+    }
+    
+    @keyframes twitch {
+        from {
+            transform: rotate(250deg) translateX(-380px);
+        }
+        to {
+            transform: rotate(470deg) translateX(-380px);
+        }
+        
+    }
+    
+    @keyframes rings {
+        from {
+            transform: rotate(-280deg) translateY(5px);
+        }
+        to {
+            transform: rotate(-500deg) translateY(5px);
+        }
+        
+}
+    
+    
 }
 
 

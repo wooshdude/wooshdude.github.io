@@ -238,6 +238,22 @@ a{
 }
 
 
+@media only screen and (max-width: 600px) {
+    html {
+        zoom: 0.8;
+    }
+    
+    body {
+        background-color: cadetblue;
+    }
+    
+    .all {
+        position: absolute;
+        transform: translate(420px);
+        top: 50%;
+    }
+}
+
 
 
 

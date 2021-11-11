@@ -70,30 +70,30 @@ a{
 
 @keyframes bots {
     from {
-        transform: rotate(0deg) translateX(150px);
+        transform: rotate(0deg) translateX(-150px);
     }
     to {
-        transform: rotate(360deg) translateX(150px);
+        transform: rotate(360deg) translateX(-150px);
     }
     
 }
 
 @keyframes youtube {
     from {
-        transform: rotate(0deg) translateX(250px);
+        transform: rotate(0deg) translateX(-250px);
     }
     to {
-        transform: rotate(360deg) translateX(250px);
+        transform: rotate(360deg) translateX(-250px);
     }
     
 }
 
 @keyframes twitch {
     from {
-        transform: rotate(0deg) translateX(380px);
+        transform: rotate(0deg) translateX(-380px);
     }
     to {
-        transform: rotate(360deg) translateX(380px);
+        transform: rotate(360deg) translateX(-380px);
     }
     
 }

@@ -1,0 +1,244 @@
+body {
+    background-color: #111;
+    color:antiquewhite;
+    font-family: monospace;
+    font-size: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    color:antiquewhite;
+    text-decoration-color: antiquewhite;
+}
+
+a{
+    color:whitesmoke
+}
+
+
+.planet,
+.star {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    top: calc(50% - var(--size) / 2);
+    left: calc(50% - var(--size) / 2);
+}
+
+
+/* OBJECTS */
+
+.sun {
+    --size: 120px;
+    background-color: yellow;
+    box-shadow: 0px 0px 200px 80px yellow;
+}
+
+.bots{
+    --size: 50px;
+    background-color: whitesmoke;
+    animation: bots 15s infinite linear;
+    box-shadow: 0px 0px 20px 5px whitesmoke;
+}
+
+.youtube{
+    --size: 70px;
+    background-color: firebrick;
+    transform: translateX(150px);
+    animation: youtube 20s infinite linear;
+    box-shadow: 0px 0px 20px 5px firebrick;
+}
+
+.twitch{
+    --size: 100px;
+    background-color: rebeccapurple;
+    transform: translateX(380px);
+    animation: twitch 25s infinite linear;
+    box-shadow: 0px 0px 20px 5px rebeccapurple;
+}
+
+.rings{
+    --size: 200px;
+    border: 5px solid;
+    height: var(--squish);
+    --squish: 50%;
+    border-top: 0px;
+    transform: translateY(50px);
+    top:  calc(50% - (var(--squish) / 2));
+    left: calc(50% - var(--size) / 2);
+    animation: rings 25s infinite linear;
+}
+
+@keyframes bots {
+    from {
+        transform: rotate(0deg) translateX(150px);
+    }
+    to {
+        transform: rotate(360deg) translateX(150px);
+    }
+    
+}
+
+@keyframes youtube {
+    from {
+        transform: rotate(0deg) translateX(250px);
+    }
+    to {
+        transform: rotate(360deg) translateX(250px);
+    }
+    
+}
+
+@keyframes twitch {
+    from {
+        transform: rotate(0deg) translateX(380px);
+    }
+    to {
+        transform: rotate(360deg) translateX(380px);
+    }
+    
+}
+
+@keyframes rings {
+    from {
+        transform: rotate(-30deg) translateY(5px);
+    }
+    to {
+        transform: rotate(-390deg) translateY(5px);
+    }
+    
+}
+
+
+
+/* TEXT */
+
+.botsText{
+    --size: 150px;
+    border-radius: 0px;
+    rotation: static;
+    text-align: center;
+    animation: botsText 15s infinite linear;
+    
+}
+
+.youtubeText{
+    --size: 150px;
+    border-radius: 0px;
+    rotation: static;
+    text-align: center;
+    animation: youtubeText 20s infinite linear; 
+}
+
+.twitchText{
+    --size: 150px;
+    border-radius: 0px;
+    text-align: center;
+    animation: twitchText 25s infinite linear;
+}
+
+@keyframes botsText {
+    from {
+        transform: rotate(0deg) translateY(-30px);
+    }
+    to {
+        transform: rotate(-360deg) translateY(-30px);
+    }
+    
+}
+
+@keyframes youtubeText {
+    from {
+        transform: rotate(0deg) translateY(-40px);
+    }
+    to {
+        transform: rotate(-360deg) translateY(-40px);
+    }
+    
+}
+
+@keyframes twitchText {
+    from {
+        transform: rotate(0deg) translateY(-60px);
+    }
+    to {
+        transform: rotate(-360deg) translateY(-60px);
+    }
+}
+
+
+
+/* ORBITS */
+
+.botOrbit{
+    --size: 300px;
+    border-color: whitesmoke;
+    border-style: dashed;
+    z-index: -1;
+}
+
+.youtubeOrbit{
+    --size: 500px;
+    border-color: whitesmoke;
+    border-style: dashed;
+    z-index: -1;
+}
+
+.twitchOrbit{
+    --size: 760px;
+    border-color: whitesmoke;
+    border-style: dashed;
+    z-index: -1;
+}
+
+
+/* IMAGES */
+.twitchImg
+ {
+    width: 100px;
+    height: auto;
+    position:absolute;
+    display: block;
+    animation: img 25s infinite linear;
+}
+
+.youtubeImg
+ {
+    width: 70px;
+    height: auto;
+    position:absolute;
+    display: block;
+    animation: img 20s infinite linear;
+}
+
+.botsImg
+ {
+    width: 50px;
+    height: auto;
+    position:absolute;
+    display: block;
+    animation: img 15s infinite linear;
+}
+
+.sunImg
+ {
+    width: 120px;
+    height: auto;
+    position:absolute;
+    display: block;
+    opacity: 60%
+}
+
+@keyframes img {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+
+
+

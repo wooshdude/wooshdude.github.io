@@ -90,10 +90,10 @@ a{
 
 @keyframes twitch {
     from {
-        transform: rotate(250deg) translateX(-380px);
+        transform: rotate(0deg) translateX(-380px);
     }
     to {
-        transform: rotate(470deg) translateX(-380px);
+        transform: rotate(360deg) translateX(-380px);
     }
     
 }

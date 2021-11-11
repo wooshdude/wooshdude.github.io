@@ -245,6 +245,8 @@ a{
     
     body {
         background-color: cadetblue;
+        overflow-x: scroll;
+        padding-right: 100px;
     }
     
     .all {

@@ -13,7 +13,6 @@ a{
     color:whitesmoke
 }
 
-
 .planet,
 .star {
     position: absolute;
@@ -23,6 +22,48 @@ a{
     top: calc(50% - var(--size) / 2);
     left: calc(50% - var(--size) / 2);
 }
+
+.tendrils {
+    position: absolute;
+    height: 100%;
+    top:0;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+}
+
+#red {
+    background-color: palevioletred;
+    animation: leftTransition 3s ease forwards;
+}
+#blue {
+    background-color: paleturquoise;
+    animation: leftTransition 2s ease forwards;
+}
+
+#yellow {
+    background-color: palegoldenrod;
+    animation: leftTransition 1.5s ease forwards;
+}
+
+@keyframes leftTransition {
+    from{
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+@keyframes rightTransition {
+    from{
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 
 
 /* OBJECTS */

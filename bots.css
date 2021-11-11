@@ -1,0 +1,244 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.fuckYou {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    margin-bottom: 100px;
+}
+
+.banner {
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+
+.content {
+    text-align: left;
+    font-size: 25px;
+    padding-top: 50px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.theDrew {
+    margin-top: 40px;
+    display: flex;
+    background-color: palevioletred;
+    padding: 20px;
+    width: 800px;
+    right:0px;
+    transform: translateX(-2000px);
+    animation: panel1 1s ease 2s forwards;
+    z-index: 101;
+    margin-left: 10%;
+}
+
+.uno {
+    margin-top: 40px;
+    display: flex;
+    background-color: paleturquoise;
+    padding: 20px;
+    width: 800px;
+    right:0px;
+    transform: translateX(-2000px);
+    animation: panel2 1.5s ease 2s forwards;
+    z-index: 101;
+    margin-left: 10%;
+}
+
+.drewsic {
+    margin-top: 40px;
+    display: flex;
+    background-color: palegoldenrod;
+    padding: 20px;
+    width: 800px;
+    right:0px;
+    transform: translateX(-2000px);
+    animation: panel3 2s ease 2s forwards;
+    z-index: 101;
+    margin-left: 10%;
+}
+
+img{
+    border: 18px solid #111;
+    width: 300px;
+    height: auto;
+}
+
+.unoImg{
+    width: 300px;
+    height: auto;
+}
+
+.text {
+    padding-left: 40px;
+    width: 100%;
+    background-color: #111;
+    color: whitesmoke;
+    padding-right: 40px;
+    border: 18px solid #111;
+    border-left: 0;
+}
+
+
+@keyframes panel1 {
+    from { 
+        transform: translateX(-2000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes panel2 {
+    from { 
+        transform: translateX(-2000px);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes panel3 {
+    from { 
+        transform: translateX(-2000px);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    @keyframes panel1 {
+        from { 
+            transform: translateX(-2000px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+    
+    @keyframes panel2 {
+        from { 
+            transform: translateX(-2000px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes panel3 {
+        from { 
+            transform: translateX(-2000px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        zoom: 0.4;
+    }
+    
+    @keyframes panel1 {
+        from { 
+            transform: translateX(-2000px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+
+    .theDrew {
+        display: flex;
+        background-color: palevioletred;
+        padding: 20px;
+        width: 800px;
+        left: 0px;
+        transform: translateX(-2000px);
+        animation: panel2 1s ease 2s forwards;
+        margin-bottom: 40px;
+    }
+    
+    .uno {
+        display: flex;
+        background-color: paleturquoise;
+        padding: 20px;
+        width: 800px;
+        left: 0px;
+        transform: translateX(-2000px);
+        animation: panel2 1.5s ease 2s forwards;
+        margin-bottom: 40px;
+    }
+    
+    .drewsic {
+        display: flex;
+        background-color: palegoldenrod;
+        padding: 20px;
+        width: 800px;
+        left: 0px;
+        transform: translateX(-2000px);
+        animation: panel3 2s ease 2s forwards;
+        margin-bottom: 40px;
+    }
+    
+    
+    @keyframes panel2 {
+        from { 
+            transform: translateX(-2000px);
+        }
+        to {
+            transform: translateX(-100px);
+        }
+    }
+    
+    @keyframes panel3 {
+        from { 
+            transform: translateX(-2000px);
+        }
+        to {
+            transform: translateX(-100px);
+        }
+    }
+}

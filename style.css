@@ -7,6 +7,8 @@ body {
     text-decoration: none;
     color:whitesmoke;
     text-decoration-color: antiquewhite;
+    background-image: url(stars.png)
+
 }
 
 a{
@@ -290,7 +292,10 @@ a{
     body {
         background-color: cadetblue;
         overflow: hidden;
+        background-image: none;
     }
+    
+
     
     .sunImg
     {
@@ -316,12 +321,25 @@ a{
         }
     }
     
-    @keyframes botsText {
+    img.botsImg {
+        animation: botsImg 15s infinite linear;
+    }
+    
+    @keyframes botsImg {
         from {
-            transform: rotate(-250deg) translateY(-30px);
+            transform: rotate(-240deg);
         }
         to {
-            transform: rotate(-470deg) translateY(-30px);
+            transform: rotate(-480deg);
+        }
+    }
+    
+    @keyframes botsText {
+        from {
+            transform: rotate(-240deg) translateY(-30px);
+        }
+        to {
+            transform: rotate(-480deg) translateY(-30px);
         }
         
     }
@@ -347,10 +365,10 @@ a{
     
     @keyframes bots {
         from {
-            transform: rotate(250deg) translateX(-150px);
+            transform: rotate(240deg) translateX(-150px);
         }
         to {
-            transform: rotate(470deg) translateX(-150px);
+            transform: rotate(480deg) translateX(-150px);
         }
         
     }

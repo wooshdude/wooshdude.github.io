@@ -41,12 +41,18 @@ a{
 }
 
 .banner {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-left: 200px;
     padding-bottom: 20px;
     font-size: 40px;
 }
 
+.backButton {
+        width: 50px;
+        border: 0;
+        top: 0%;
+        margin-right: 50px;
+    }
 
 .content {
     text-align: left;
@@ -181,6 +187,13 @@ img{
         zoom: 0.4;
     }
     
+    .backButton {
+        width: 50px;
+        border: 0;
+        top: 0%;
+        margin-right: 50px;
+    }
+    
     @keyframes panel1 {
         from { 
             transform: translateX(-2000px);
@@ -190,6 +203,14 @@ img{
         }
     }
 
+    .banner {
+        padding-top: 120px;
+        padding-left: 100px;
+        padding-bottom: 20px;
+        font-size: 40px;
+        font-size: 50px;
+    }
+    
     .theDrew {
         display: flex;
         background-color: palevioletred;

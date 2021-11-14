@@ -1,0 +1,26 @@
+.twitchEmbed {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 25%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.backButton {
+        width: 30px;
+        border: 0;
+        top: 0%;
+        margin-right: 50px;
+    }

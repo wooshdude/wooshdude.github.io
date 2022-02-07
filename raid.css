@@ -11,6 +11,10 @@ body {
     overflow-y: scroll;
 }
 
+.links {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -83,11 +87,19 @@ a {
     }
     
     .streams {
-        position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-        top: 25%;
-        width: 100%;
-        justify-content:center;
+        display: none;
     }
+
+    .links {
+        display: block;
+        justify-content: center;
+        width:50%;
+        padding: 100px;
+    }
+
+    img {
+        width: 100%;
+        padding: 100px;
+    }
+
 }

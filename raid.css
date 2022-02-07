@@ -45,19 +45,49 @@ a {
   * {
     scrollbar-width: auto;
     scrollbar-color: #643f6e #262626;
-  }
+}
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 16px;
-  }
+}
 
   *::-webkit-scrollbar-track {
     background: #262626;
-  }
+}
 
   *::-webkit-scrollbar-thumb {
     background-color: #643f6e;
     border-radius: 10px;
     border: 3px solid #643f6e;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        zoom: 0.4;
+        overflow: hidden;
+    }
+    
+    body {
+        background-color: cadetblue;
+        overflow: hidden;
+        background-image: none;
+    }
+    
+    .banner {
+        font-size: 50px;
+    }
+
+    .sub{
+        font-size: 42px;
+    }
+    
+    .streams {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        top: 25%;
+        width: 100%;
+        justify-content:center;
+    }
+}

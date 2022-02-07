@@ -27,27 +27,25 @@
                 </div>
             </a>
             
-            <div class="twitchEmbed">
-                <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-                    <div id="SamplePlayerDivID"></div>
+            <div class="woosh-twitch">
+                <!-- Twitch Channel Embedded-->
+                    <h3>wooshdude</h3>
+                    <!-- Add a placeholder for the Twitch embed -->
+                    <div id="twitch-embed"></div>
+
+                    <!-- Load the Twitch embed JavaScript file -->
+                    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
                     <script type="text/javascript">
-                        var options = {
+                        new Twitch.Embed("twitch-embed", {
                             width: 854,
                             height: 480,
                             channel: "wooshdude",
-                        };
-                        var player = new Twitch.Player("SamplePlayerDivID", options);
-                        player.setVolume(0.5);
+                            // Only needed if this page is going to be embedded on other websites
+                            parent: ["wooshdude.com", "www.wooshdude.com"]
+                        });
                     </script>
-                
-                <iframe frameborder="0"
-                    scrolling="no"
-                    id="wooshdude"
-                    src="https://www.twitch.tv/embed/wooshdude/chat"
-                    height="500"
-                    width="350">
-                </iframe>
-                
             </div>
             
             

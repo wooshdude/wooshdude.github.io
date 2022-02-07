@@ -1,0 +1,63 @@
+.streams {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 25%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    display: flex;
+    background-color: #643f6e;
+}
+
+.sub {
+    padding-top: 10px;
+    padding-left: 250px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    background-color: #47314d;
+}
+
+.backButton {
+        width: 30px;
+        border: 0;
+        top: 0%;
+        margin-right: 50px;
+    }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #643f6e #262626;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #262626;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #643f6e;
+    border-radius: 10px;
+    border: 3px solid #643f6e;
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>wooshdude</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/MotionPathPlugin.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="twitch.css">
+        <link rel="icon" href="logo%20round.png" style="border-radius: 50%">
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    </head>
+    <body id='myCanvas'>
+        
+        <div class="tendrils" id="red"></div>
+        <div class="tendrils" id="blue"></div>
+        <div class="tendrils" id='yellow'></div>
+
+        <div class="twitchEmbed">
+            <!-- Twitch Channel Embedded-->
+
+                <!-- Add a placeholder for the Twitch embed -->
+                <div id="twitch-embed"></div>
+            
+                <!-- Load the Twitch embed JavaScript file -->
+                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            
+                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+                <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed", {
+                        width: 854,
+                        height: 480,
+                        channel: "wooshdude",
+                        // Only needed if this page is going to be embedded on other websites
+                        parent: ["wooshdude.com", "www.wooshdude.com"]
+                    });
+                </script>
+        </div>
+            
+	    <script src="index.js"></script>
+    </body>
+</html>

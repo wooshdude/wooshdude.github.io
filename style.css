@@ -254,7 +254,7 @@ a{
 }
 
 .botsImg
- {
+{
     width: 50px;
     height: auto;
     position:absolute;
@@ -263,13 +263,13 @@ a{
 }
 
 .sunImg
- {
+{
     width: 120px;
     height: auto;
     position:absolute;
     display: block;
     opacity: 60%;
-     display: block;
+    display: block;
 }
 
 @keyframes img {

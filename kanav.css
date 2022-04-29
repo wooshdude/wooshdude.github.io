@@ -1,4 +1,4 @@
-pbody{
+.body{
     background-color: #3f88aa;
 }
 
@@ -27,11 +27,10 @@ pbody{
 }
 
 @keyframes tech {
-    from {
-        transform: rotate(0deg) translateX(-150px)
+    from { 
+        transform: rotate(0deg) translateX(-150px);
     }
-    to {
-        transform: rotate(360deg) translateX(-150px)
+    to { 
+        transform: rotate(-360deg) translateX(-150px);
     }
 }
-

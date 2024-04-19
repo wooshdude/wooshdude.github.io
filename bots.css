@@ -63,7 +63,7 @@ a{
     margin-bottom: 10%;
 }
 
-.theDrew {
+.projectRed {
     margin-top: 40px;
     display: flex;
     background-color: palevioletred;
@@ -76,7 +76,7 @@ a{
     margin-left: 10%;
 }
 
-.uno {
+.projectBlue {
     margin-top: 40px;
     display: flex;
     background-color: paleturquoise;
@@ -89,7 +89,7 @@ a{
     margin-left: 10%;
 }
 
-.drewsic {
+.projectYellow {
     margin-top: 40px;
     display: flex;
     background-color: palegoldenrod;

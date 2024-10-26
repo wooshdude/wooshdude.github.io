@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Page PDF Viewer</title>
+  <style>
+    /* Remove any margin or padding on the body to take full control */
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    /* Embed or iframe styling to take the full page */
+    .pdf-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Option 1: Using <embed> to show the PDF fullscreen -->
+  <embed src="resume.pdf" class="pdf-viewer" type="application/pdf">
+
+  <!-- Option 2: Using <iframe> for fullscreen PDF -->
+  <!-- <iframe src="yourfile.pdf" class="pdf-viewer" style="border: none;"></iframe> -->
+
+</body>
+</html>
+

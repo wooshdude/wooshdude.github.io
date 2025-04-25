@@ -1,411 +1,375 @@
 body {
-    background-color: #111;
-    color:antiquewhite;
-    font-family: monospace;
-    font-size: 30px;
-    overflow: hidden;
-    text-decoration: none;
-    color:whitesmoke;
-    text-decoration-color: antiquewhite;
-    background-image: url(stars.png)
-
+  background-color: #111;
+  color: antiquewhite;
+  font-family: monospace;
+  font-size: 30px;
+  overflow: hidden;
+  text-decoration: none;
+  color: whitesmoke;
+  text-decoration-color: antiquewhite;
+  background-image: url(stars.png);
 }
 
-a{
-    color:whitesmoke
+a {
+  color: whitesmoke;
 }
 
 .planet,
 .star {
-    position: absolute;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    top: calc(50% - var(--size) / 2);
-    left: calc(50% - var(--size) / 2);
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  top: calc(50% - var(--size) / 2);
+  left: calc(50% - var(--size) / 2);
 }
 
 .tendrils {
-    position: absolute;
-    height: 100%;
-    top:0;
-    left: 0;
-    bottom: 0;
-    z-index: 101;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
 }
 
 #red {
-    background-color: palevioletred;
-    animation: leftTransition 3s ease forwards;
+  background-color: palevioletred;
+  animation: leftTransition 3s ease forwards;
 }
 #blue {
-    background-color: paleturquoise;
-    animation: leftTransition 2s ease forwards;
+  background-color: paleturquoise;
+  animation: leftTransition 2s ease forwards;
 }
 
 #yellow {
-    background-color: palegoldenrod;
-    animation: leftTransition 1.5s ease forwards;
+  background-color: palegoldenrod;
+  animation: leftTransition 1.5s ease forwards;
 }
 
 @keyframes leftTransition {
-    from{
-        width: 100%;
-    }
-    to {
-        width: 0%;
-    }
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
 
 @keyframes rightTransition {
-    from{
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
-
-
 
 /* OBJECTS */
 
 .sun {
-    --size: 120px;
-    background-color: yellow;
-    box-shadow: 0px 0px 200px 80px yellow;
+  --size: 120px;
+  background-color: yellow;
+  box-shadow: 0px 0px 200px 80px yellow;
 }
 
-.bots{
-    --size: 50px;
-    background-color: whitesmoke;
-    animation: bots 15s infinite linear;
-    box-shadow: 0px 0px 20px 5px whitesmoke;
+.bots {
+  --size: 50px;
+  background-color: whitesmoke;
+  animation: bots 15s infinite linear;
+  box-shadow: 0px 0px 20px 5px whitesmoke;
 }
 
-.youtube{
-    --size: 70px;
-    background-color: firebrick;
-    transform: translateX(150px);
-    animation: youtube 20s infinite linear;
-    box-shadow: 0px 0px 20px 5px firebrick;
+.youtube {
+  --size: 70px;
+  background-color: firebrick;
+  transform: translateX(150px);
+  animation: youtube 20s infinite linear;
+  box-shadow: 0px 0px 20px 5px firebrick;
 }
 
-.twitch{
-    --size: 100px;
-    background-color: rebeccapurple;
-    transform: translateX(380px);
-    animation: twitch 25s infinite linear;
-    box-shadow: 0px 0px 20px 5px rebeccapurple;
+.twitch {
+  --size: 100px;
+  background-color: rebeccapurple;
+  transform: translateX(380px);
+  animation: twitch 25s infinite linear;
+  box-shadow: 0px 0px 20px 5px rebeccapurple;
 }
 
-.rings{
-    --size: 200px;
-    border: 5px solid;
-    height: var(--squish);
-    --squish: 50%;
-    border-top: 0px;
-    transform: translateY(50px);
-    top:  calc(50% - (var(--squish) / 2));
-    left: calc(50% - var(--size) / 2);
-    animation: rings 25s infinite linear;
+.rings {
+  --size: 200px;
+  border: 5px solid;
+  height: var(--squish);
+  --squish: 50%;
+  border-top: 0px;
+  transform: translateY(50px);
+  top: calc(50% - (var(--squish) / 2));
+  left: calc(50% - var(--size) / 2);
+  animation: rings 25s infinite linear;
 }
 
 @keyframes bots {
-    from {
-        transform: rotate(0deg) translateX(-150px);
-    }
-    to {
-        transform: rotate(360deg) translateX(-150px);
-    }
-    
+  from {
+    transform: rotate(0deg) translateX(-150px);
+  }
+  to {
+    transform: rotate(360deg) translateX(-150px);
+  }
 }
 
 @keyframes youtube {
-    from {
-        transform: rotate(0deg) translateX(-250px);
-    }
-    to {
-        transform: rotate(360deg) translateX(-250px);
-    }
-    
+  from {
+    transform: rotate(0deg) translateX(-250px);
+  }
+  to {
+    transform: rotate(360deg) translateX(-250px);
+  }
 }
 
 @keyframes twitch {
-    from {
-        transform: rotate(0deg) translateX(-380px);
-    }
-    to {
-        transform: rotate(360deg) translateX(-380px);
-    }
-    
+  from {
+    transform: rotate(0deg) translateX(-380px);
+  }
+  to {
+    transform: rotate(360deg) translateX(-380px);
+  }
 }
 
 @keyframes rings {
-    from {
-        transform: rotate(-30deg) translateY(5px);
-    }
-    to {
-        transform: rotate(-390deg) translateY(5px);
-    }
-    
+  from {
+    transform: rotate(-30deg) translateY(5px);
+  }
+  to {
+    transform: rotate(-390deg) translateY(5px);
+  }
 }
-
-
 
 /* TEXT */
 
-.botsText{
-    --size: 150px;
-    border-radius: 0px;
-    rotation: static;
-    text-align: center;
-    animation: botsText 15s infinite linear;
-    
+.botsText {
+  --size: 150px;
+  border-radius: 0px;
+  rotation: static;
+  text-align: center;
+  animation: botsText 15s infinite linear;
 }
 
-.youtubeText{
-    --size: 150px;
-    border-radius: 0px;
-    rotation: static;
-    text-align: center;
-    animation: youtubeText 20s infinite linear; 
+.youtubeText {
+  --size: 150px;
+  border-radius: 0px;
+  rotation: static;
+  text-align: center;
+  animation: youtubeText 20s infinite linear;
 }
 
-.twitchText{
-    --size: 150px;
-    border-radius: 0px;
-    text-align: center;
-    animation: twitchText 25s infinite linear;
+.twitchText {
+  --size: 150px;
+  border-radius: 0px;
+  text-align: center;
+  animation: twitchText 25s infinite linear;
 }
 
 @keyframes botsText {
-    from {
-        transform: rotate(0deg) translateY(-30px);
-    }
-    to {
-        transform: rotate(-360deg) translateY(-30px);
-    }
-    
+  from {
+    transform: rotate(0deg) translateY(-30px);
+  }
+  to {
+    transform: rotate(-360deg) translateY(-30px);
+  }
 }
 
 @keyframes youtubeText {
-    from {
-        transform: rotate(0deg) translateY(-40px);
-    }
-    to {
-        transform: rotate(-360deg) translateY(-40px);
-    }
-    
+  from {
+    transform: rotate(0deg) translateY(-40px);
+  }
+  to {
+    transform: rotate(-360deg) translateY(-40px);
+  }
 }
 
 @keyframes twitchText {
-    from {
-        transform: rotate(0deg) translateY(-60px);
-    }
-    to {
-        transform: rotate(-360deg) translateY(-60px);
-    }
+  from {
+    transform: rotate(0deg) translateY(-60px);
+  }
+  to {
+    transform: rotate(-360deg) translateY(-60px);
+  }
 }
-
-
 
 /* ORBITS */
 
-.botOrbit{
-    --size: 300px;
-    border-color: whitesmoke;
-    border-style: dashed;
-    z-index: -1;
+.botOrbit {
+  --size: 300px;
+  border-color: whitesmoke;
+  border-style: dashed;
+  z-index: -1;
 }
 
-.youtubeOrbit{
-    --size: 500px;
-    border-color: whitesmoke;
-    border-style: dashed;
-    z-index: -1;
+.youtubeOrbit {
+  --size: 500px;
+  border-color: whitesmoke;
+  border-style: dashed;
+  z-index: -1;
 }
 
-.twitchOrbit{
-    --size: 760px;
-    border-color: whitesmoke;
-    border-style: dashed;
-    z-index: -1;
+.twitchOrbit {
+  --size: 760px;
+  border-color: whitesmoke;
+  border-style: dashed;
+  z-index: -1;
 }
-
 
 /* IMAGES */
-.twitchImg
- {
-    width: 100px;
-    height: auto;
-    position:absolute;
-    display: block;
-    animation: img 25s infinite linear;
+.twitchImg {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  display: block;
+  animation: img 25s infinite linear;
 }
 
-.youtubeImg
- {
-    width: 70px;
-    height: auto;
-    position:absolute;
-    display: block;
-    animation: img 20s infinite linear;
+.youtubeImg {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  display: block;
+  animation: img 20s infinite linear;
 }
 
-.botsImg
-{
-    width: 50px;
-    height: auto;
-    position:absolute;
-    display: block;
-    animation: img 15s infinite linear;
+.botsImg {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  display: block;
+  animation: img 15s infinite linear;
 }
 
-.sunImg
-{
-    width: 120px;
-    height: auto;
-    position:absolute;
-    display: block;
-    opacity: 60%;
-    display: block;
+.sunImg {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  display: block;
+  opacity: 60%;
+  display: block;
 }
 
 @keyframes img {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
-
-    
 
 @media only screen and (max-width: 600px) {
-    html {
-        zoom: 0.8;
-        overflow: hidden;
-    }
-    
-    body {
-        background-color: cadetblue;
-        overflow: hidden;
-        background-image: none;
-    }
-    
+  html {
+    zoom: 0.8;
+    overflow: hidden;
+  }
 
-    .sunImg
-    {
-        display: none;
-    }
-    
-    .sun{
-        border: 12px solid white;
-        border-style: double;
-    }
-    .all {
-        position: absolute;
-        transform: translate(465px);
-        top: 50%;
-    }
-    
-    @keyframes img {
-        from {
-            transform: rotate(-250deg);
-        }
-        to {
-            transform: rotate(-470deg);
-        }
-    }
-    
-    img.botsImg {
-        animation: botsImg 15s infinite linear;
-    }
-    
-    @keyframes botsImg {
-        from {
-            transform: rotate(-240deg);
-        }
-        to {
-            transform: rotate(-480deg);
-        }
-    }
-    
-    @keyframes botsText {
-        from {
-            transform: rotate(-240deg) translateY(-30px);
-        }
-        to {
-            transform: rotate(-480deg) translateY(-30px);
-        }
-        
-    }
+  body {
+    background-color: cadetblue;
+    overflow: hidden;
+    background-image: none;
+  }
 
-    @keyframes youtubeText {
-        from {
-            transform: rotate(-250deg) translateY(-40px);
-        }
-        to {
-            transform: rotate(-470deg) translateY(-40px);
-        }
-        
+  .sunImg {
+    display: none;
+  }
+
+  .sun {
+    border: 12px solid white;
+    border-style: double;
+  }
+  .all {
+    position: absolute;
+    transform: translate(500px);
+    top: 50%;
+  }
+
+  @keyframes img {
+    from {
+      transform: rotate(-250deg);
     }
-    
-    @keyframes twitchText {
-        from {
-            transform: rotate(-250deg) translateY(-60px);
-        }
-        to {
-            transform: rotate(-470deg) translateY(-60px);
-        }
+    to {
+      transform: rotate(-470deg);
     }
-    
-    @keyframes bots {
-        from {
-            transform: rotate(240deg) translateX(-150px);
-        }
-        to {
-            transform: rotate(480deg) translateX(-150px);
-        }
-        
+  }
+
+  img.botsImg {
+    animation: botsImg 15s infinite linear;
+  }
+
+  @keyframes botsImg {
+    from {
+      transform: rotate(-240deg);
     }
-    
-    @keyframes youtube {
-        from {
-            transform: rotate(250deg) translateX(-250px);
-        }
-        to {
-            transform: rotate(470deg) translateX(-250px);
-        }
-        
+    to {
+      transform: rotate(-480deg);
     }
-    
-    @keyframes twitch {
-        from {
-            transform: rotate(250deg) translateX(-380px);
-        }
-        to {
-            transform: rotate(470deg) translateX(-380px);
-        }
-        
+  }
+
+  @keyframes botsText {
+    from {
+      transform: rotate(-240deg) translateY(-30px);
     }
-    
-    @keyframes rings {
-        from {
-            transform: rotate(-280deg) translateY(5px);
-        }
-        to {
-            transform: rotate(-500deg) translateY(5px);
-        }
-        
+    to {
+      transform: rotate(-480deg) translateY(-30px);
+    }
+  }
+
+  @keyframes youtubeText {
+    from {
+      transform: rotate(-250deg) translateY(-40px);
+    }
+    to {
+      transform: rotate(-470deg) translateY(-40px);
+    }
+  }
+
+  @keyframes twitchText {
+    from {
+      transform: rotate(-250deg) translateY(-60px);
+    }
+    to {
+      transform: rotate(-470deg) translateY(-60px);
+    }
+  }
+
+  @keyframes bots {
+    from {
+      transform: rotate(240deg) translateX(-150px);
+    }
+    to {
+      transform: rotate(480deg) translateX(-150px);
+    }
+  }
+
+  @keyframes youtube {
+    from {
+      transform: rotate(250deg) translateX(-250px);
+    }
+    to {
+      transform: rotate(470deg) translateX(-250px);
+    }
+  }
+
+  @keyframes twitch {
+    from {
+      transform: rotate(250deg) translateX(-380px);
+    }
+    to {
+      transform: rotate(470deg) translateX(-380px);
+    }
+  }
+
+  @keyframes rings {
+    from {
+      transform: rotate(-280deg) translateY(5px);
+    }
+    to {
+      transform: rotate(-500deg) translateY(5px);
+    }
+  }
 }
-    
-    
-}
-
-
-
-
-
